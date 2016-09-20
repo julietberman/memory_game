@@ -1,0 +1,71 @@
+body {
+	font-family: Helvetica;
+	
+}
+main {
+	text-align: center;
+}
+h1 {color: rgb(2, 132, 130);
+	text-decoration: underline;
+}
+h2 {color: #ffd700;
+}
+
+nav {
+	background: #808080;
+}
+
+a.menu {
+	color: #ffffff;
+	background: #ffbf00;
+	padding: 35px;
+	display: block;
+	float: left;
+	text-decoration: none;
+}
+
+a:hover {
+	background:#ee5f3c;
+
+}
+
+div {
+	margin: 10px;
+	padding: 10px;
+	display: inline-block;
+}
+.board {
+	height: 50%;
+	width: 45%;
+	display: inline-block;
+	float: left;
+	margin: 8%;
+}
+
+.card {
+	height: 200px;
+	width: 150px;
+	background-color: #ffff00;
+	border: 1px solid black;
+	border-radius: 10px;
+	}
+
+.gamemaster {
+	color: #ff0000;
+	}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    font-size: 0;
+  }
+
+footer {
+
+  background-color:#808080;
+  text-align: center;
+  clear: both;
+}

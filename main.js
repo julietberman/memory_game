@@ -1,7 +1,7 @@
 
 console.log("JS file is connected to HTML! Woo!")
 
-
+var cardElement;
 var cards = ["queen", "queen", "king", "king"];
 var cardsInPlay = [];
 var gameBoard = document.getElementById('game-board');
@@ -9,11 +9,13 @@ var gameBoard = document.getElementById('game-board');
 function createBoard(){
 for (var i = 0; i < cards.length; i++)
 	{
-    var cardElement = document.createElement('div');
+    cardElement = document.createElement('div');
 	cardElement.className = 'card';
+	cardElement.innerHTML= '<img src= "images/PlayCardDesign.png">';
 	gameBoard.appendChild(cardElement);
 	cardElement.setAttribute('data-card', cards[i]);
     cardElement.addEventListener('click', isTwoCards);
+    console.log(cardElement);
 	}
 }
 
@@ -45,12 +47,10 @@ function isMatch (x) {
     btn.addEventListener('click', clearBoard);
 }
 
-function clearBoard(){
-	location.reload();
-	}
-	
+function clearBoard() {
+	document.getElementById("playagain").innerHTML="";
+	document.getElementById("game-board").innerHTML="";
+	createBoard();
+}
 
-createBoard();
-
-
-
+createBoard();	

@@ -65,12 +65,9 @@ a.links {
 .card {
 	height: 200px;
 	width: 150px;
-	background-image: url("../images/PlayCardDesign.png");
 	background-size: contain;
-	border: 1px solid black;
-	border-radius: 14px;
 	display: inline-block;
-  	margin:5%;
+  	margin: 5%;
 	}
 
 .board {
@@ -104,5 +101,6 @@ footer {
 img {
 	height: 200px;
 	width: 150px;
-	
+	border-radius: 14px;
+	border: 1px solid black;
 }

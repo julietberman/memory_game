@@ -50,6 +50,7 @@ function isMatch (x) {
 function clearBoard() {
 	document.getElementById("playagain").innerHTML="";
 	document.getElementById("game-board").innerHTML="";
+	cardsInPlay = [];
 	createBoard();
 }
 
